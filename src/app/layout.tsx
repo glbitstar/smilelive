@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
 import { Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
+// import { Toaster } from "@/components/ui/sonner"
+import { Navbar } from "@/components/navbar"
+// import { Footer } from "@/components/footer"
 
 const notoSansJP = Noto_Sans_JP({
   variable: "--font-noto-sans-jp",
-  weight: ["400", "700"], // 400 for Regular, 700 for Bold
+  weight: ["400", "700"],
   subsets: ["latin"],
 });
 
@@ -20,10 +23,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body
-        className={`${notoSansJP.variable} antialiased`}
-      >
-        {children}
+      <body className={`${notoSansJP.variable} antialiased`}>
+        <div className="relative flex min-h-screen flex-col bg-background">
+          <Navbar />
+          <main className="flex-1">
+            {children}
+          </main>
+          {/* <Footer /> */}
+        </div>
+        {/* <Toaster /> */}
       </body>
     </html>
   );
