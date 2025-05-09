@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
 import { Logo } from './logo';
-// import { Menu, X, MessageSquare } from 'lucide-react';
+import { Menu, X, ChevronRight } from 'lucide-react';
 // import { Button } from './ui/button';
 
 export function Navbar() {
@@ -28,7 +28,7 @@ export function Navbar() {
       <Link
         href={item.href}
         className={cn(
-          "px-4 text-lg font-bold hover:text-primary first:border-l-2 border-r-2",
+          "px-4 font-bold text-sm hover:text-primary first:border-l-2 border-r-2 transition duration-500 xl:text-lg",
           isActive
             ? "text-amber-300"
             : "text-white"
@@ -40,50 +40,48 @@ export function Navbar() {
   };
 
   return (
-    <header className="flex justify-center items-center sticky top-0 z-50 w-full bg-[#F59DA5] shadow-[0_4px_20px_rgba(0,0,0,0.25)]">
+    <header className="lg:flex flex-col justify-center items-center sticky top-0 z-50 w-full bg-[#F59DA5] shadow-[0_4px_20px_rgba(0,0,0,0.25)]">
       <div className="container flex h-20 items-center justify-between max-w-[1400] px-8">
         <Logo />
 
-        <nav className="hidden md:flex items-center">
+        <nav className="hidden lg:flex items-center">
           {navItems.map((item) => (
             <NavLink key={item.href} item={item} />
           ))}
-
         </nav>
 
         {/* Mobile menu button */}
-        {/* <Button
-          variant="ghost"
-          size="icon"
-          className="md:hidden"
+        <button
+          className="lg:hidden"
           onClick={() => setMobileNavOpen(!mobileNavOpen)}
           aria-label={mobileNavOpen ? "メニューを閉じる" : "メニューを開く"}
         >
           {mobileNavOpen ? (
-            <X className="h-6 w-6" />
+            <X className="h-12 w-12" />
           ) : (
-            <Menu className="h-6 w-6" />
+            <Menu className="h-12 w-12" />
           )}
-        </Button> */}
+        </button>
       </div>
 
       {/* Mobile navigation */}
       {mobileNavOpen && (
-        <div className="md:hidden">
-          <nav className="grid gap-2 p-4 border-t">
+        <div className="lg:hidden">
+          <nav className="">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
                 className={cn(
-                  "flex items-center py-2 text-base font-bold transition-colors hover:text-primary",
+                  " flex items-center h-[70] sm:pl-10 pl-6 pr-5 sm:text-2xl text-lg font-bold transition-colors hover:text-primary bg-[#F59DA5] border-t-2 ",
                   pathname === item.href
-                    ? "text-primary"
-                    : "text-slate-700"
+                    ? "text-white"
+                    : "text-white"
                 )}
                 onClick={() => setMobileNavOpen(false)}
               >
-                {item.name}
+                <span className="ml-2">{item.name}</span>
+                <ChevronRight className="ml-auto sm:h-10 sm:w-10" />
               </Link>
             ))}
           </nav>

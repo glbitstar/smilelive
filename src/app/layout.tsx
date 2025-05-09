@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import { Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
-// import { Toaster } from "@/components/ui/sonner"
 import { Navbar } from "@/components/navbar"
-// import { Footer } from "@/components/footer"
+import { Footer } from "@/components/footer"
 
 const notoSansJP = Noto_Sans_JP({
   variable: "--font-noto-sans-jp",
@@ -14,6 +13,7 @@ const notoSansJP = Noto_Sans_JP({
 export const metadata: Metadata = {
   title: "スマイルライブ",
   description: "ライブ配信でお客様と画面越しに楽しくお話しするお仕事です。 ご希望のジャンルで配信いただけます。",
+  viewport: 'width=device-width, initial-scale=1.0',
 };
 
 export default function RootLayout({
@@ -29,9 +29,8 @@ export default function RootLayout({
           <main className="flex-1">
             {children}
           </main>
-          {/* <Footer /> */}
+          <Footer />
         </div>
-        {/* <Toaster /> */}
       </body>
     </html>
   );
