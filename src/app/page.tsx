@@ -6,26 +6,22 @@ import { FAQ } from "@/components/ui/faq";
 export default function Home() {
   return (
     <div>
-      <div className="bg-no-repeat h-screen w-full "
-        style={{ backgroundImage: "url('/images/hero.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
-      </div>
-      <div className="">
-        <p className="absolute left-[5vw] top-[250] text-shadow-[4px_4px_4px_#FF84AA] text-7xl font-bold text-white transform-[rotate(-15deg)]">
+      <div className="bg-no-repeat md:h-[calc(100vh-80px)] h-[100vw] w-full bg-[url('/images/hero.png')] bg-cover bg-center">
+        <p className="absolute sm:left-[5vw] left-[3vw] xl:top-[200] lg:top-[190] top-[calc(16vw+80px)] text-shadow-[4px_4px_4px_#FF84AA] xl:text-7xl lg:text-6xl md:text-5xl text-[6vw] font-bold text-white transform-[rotate(-15deg)]">
           未経験者
         </p>
-        <p className="absolute left-[10vw] top-[310] bg-clip-text text-transparent bg-[linear-gradient(95.16deg,_#FF84AA_5.81%,_#FC1FCC_97.87%)] text-9xl font-bold transform-[rotate(-15deg)] filter drop-shadow-[6px_6px_2px_#FFFFFF]">
+        <p className="absolute sm:left-[10vw] left-[7vw] xl:top-[270] lg:top-[250] top-[calc(20vw+80px)] bg-clip-text text-transparent bg-[linear-gradient(95.16deg,_#FF84AA_5.81%,_#FC1FCC_97.87%)] xl:text-9xl lg:text-8xl md:text-7xl text-[11vw] font-bold transform-[rotate(-15deg)] filter drop-shadow-[6px_6px_2px_#FFFFFF]">
           歓迎！
         </p>
         <div
-          style={{ backgroundImage: "url('/images/speech.png')" }}
-          className="absolute right-[2vw] top-[22vw] bg-no-repeat w-[421] h-[161] flex justify-center items-center"
+          className="bg-[url('/images/speech.png')] bg-cover bg-center absolute xl:right-[2vw] lg:right-[1vw] right-0 xl:top-[200] lg:top-[250] md:top-[300] top-[calc(30vw+80px)] bg-no-repeat flex justify-center items-center"
         >
-          <p className="text-3xl text-center text-[#333333] text-shadow-[4px_4px_4px_rgba(0,0,0,0.4)] text-bold">
+          <p className="xl:py-10 xl:px-24 lg:py-8 lg:px-21 md:py-7 md:px-16 sm:py-5 sm:px-12 py-[2.5vw] px-[7vw]  xl:text-3xl lg:text-2xl sm:text-xl text-[3vw] font-bold text-center text-[#333333] text-shadow-[4px_4px_4px_rgba(0,0,0,0.4)] text-bold">
             やってみないと<br />
             わからない！
           </p>
         </div>
-        <p className="absolute top-[85vh] right-[2vw] font-bold text-5xl text-[#FDF70B] text-shadow-[4px_4px_4px_#FF84AA]">
+        <p className="absolute xl:top-[calc(92vh-80px)] lg:top-[calc(94vh-80px)] md:top-[calc(96vh-80px)] top-[100vw] right-[2vw] font-bold xl:text-5xl lg:text-4xl md:text-3xl text-2xl text-[#FDF70B] text-shadow-[4px_4px_4px_#FF84AA]">
           あなたの隠れた才能を<br />
           開花させるのは今です！
         </p>
@@ -126,10 +122,10 @@ export default function Home() {
           公式ライン、またはお電話でお問い合わせください
         </p>
         <div className="flex flex-col md:flex-row items-center justify-center md:gap-5 gap-3 md:pb-15 pb-10 md:px-5 px-10">
-          <a href="https://lin.ee/NfkGrVi" className="follow_side_line">
+          <a href="" className="follow_side_line">
             <img src="images/line_pc.png" alt="line_pc" className="w-[550]" />
           </a>
-          <a href="tel:0120-998-707" className="follow_side_tel">
+          <a href="tel:090-0000-0000" className="follow_side_tel">
             <img src="images/phone_pc.png" alt="phone_pc" className="w-[550]" />
           </a>
         </div>

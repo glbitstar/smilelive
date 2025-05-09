@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "clsx": "^2.1.1",
     "html-react-parser": "^5.2.3",
     "lucide-react": "^0.507.0",

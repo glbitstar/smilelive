@@ -41,21 +41,21 @@ export function Footer() {
         }`}
     >
       <div className='hidden md:flex justify-center items-center gap-5 px-10'>
-        <Link href="https://lin.ee/NfkGrVi" target="_blank">
+        <Link href="" target="_blank">
           <img src="/images/footer_line_pc.png" alt="footer_line_pc" className="w-[450]" />
         </Link>
-        <Link href="tel:0120998707" target="_blank">
+        <Link href="tel:090-0000-0000" target="_blank">
           <img src="/images/footer_phone_pc.png" alt="footer_phone_pc" className="w-[450]" />
         </Link>
       </div>
       <div className='flex justify-center items-center md:hidden'>
         <div className='flex flex-1 items-center justify-center bg-[#06C755]'>
-          <Link href="https://lin.ee/NfkGrVi" target="_blank">
+          <Link href="" target="_blank">
             <img src="/images/footer_line_sp.png" alt="footer_line_sp" className="w-[15vw] sm:w-[80]" />
           </Link>
         </div>
         <div className='flex flex-1 items-center justify-center bg-[#F59DA5]'>
-          <Link href="tel:0120998707" target="_blank">
+          <Link href="tel:090-0000-0000" target="_blank">
             <img src="/images/footer_phone_sp.png" alt="footer_phone_sp" className="w-[15vw] sm:w-[80] sm:p-4 p-3" />
           </Link>
         </div>
