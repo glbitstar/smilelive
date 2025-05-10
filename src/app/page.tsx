@@ -7,11 +7,11 @@ export default function Home() {
   return (
     <div>
       <div className="bg-no-repeat md:h-[calc(100vh-80px)] h-[100vw] w-full bg-[url('/images/hero.png')] bg-cover bg-center">
-        <p className="absolute sm:left-[5vw] left-[3vw] xl:top-[200] lg:top-[190] top-[calc(16vw+80px)] text-shadow-[4px_4px_4px_#FF84AA] xl:text-7xl lg:text-6xl md:text-5xl text-[6vw] font-bold text-white transform-[rotate(-15deg)]">
-          未経験者
+        <p className="absolute sm:left-[5vw] left-[3vw] xl:top-[190] lg:top-[180] top-[calc(15vw+80px)] text-shadow-[4px_4px_4px_#FF84AA] xl:text-8xl lg:text-7xl md:text-6xl text-[7vw] font-bold text-white transform-[rotate(-15deg)]">
+          ライバー
         </p>
         <p className="absolute sm:left-[10vw] left-[7vw] xl:top-[270] lg:top-[250] top-[calc(20vw+80px)] bg-clip-text text-transparent bg-[linear-gradient(95.16deg,_#FF84AA_5.81%,_#FC1FCC_97.87%)] xl:text-9xl lg:text-8xl md:text-7xl text-[11vw] font-bold transform-[rotate(-15deg)] filter drop-shadow-[6px_6px_2px_#FFFFFF]">
-          歓迎！
+          募集！
         </p>
         <div
           className="bg-[url('/images/speech.png')] bg-cover bg-center absolute xl:right-[2vw] lg:right-[1vw] right-0 xl:top-[200] lg:top-[250] md:top-[300] top-[calc(30vw+80px)] bg-no-repeat flex justify-center items-center"
