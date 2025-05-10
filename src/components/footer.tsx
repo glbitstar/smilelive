@@ -37,22 +37,22 @@ export function Footer() {
 
   return (
     <div
-      className={`fixed bottom-0 z-10 w-full bg-white md:py-2 shadow-[4px_0px_10px_rgba(0,0,0,0.25)] transition-opacity duration-500 ease-in-out ${showFooter ? 'md:opacity-70 opacity-100' : 'opacity-0 pointer-events-none'
+      className={`fixed bottom-0 z-10 w-full bg-white md:py-2 shadow-[4px_0px_10px_rgba(0,0,0,0.25)] transition-opacity duration-500 ease-in-out ${showFooter ? 'md:opacity-70 md:hover:opacity-100 opacity-100' : 'opacity-0 pointer-events-none'
         }`}
     >
       <div className='hidden md:flex justify-center items-center gap-5 px-10'>
-        <Link href="" target="_blank">
+        <Link href="" target="_blank" className="opacity-70 hover:opacity-100 transition-opacity duration-300">
           <img
             src="/images/footer_line_pc.png"
             alt="footer_line_pc"
-            className="w-[450] hover:opacity-100 transition-opacity duration-300"
+            className="w-[450]"
           />
         </Link>
-        <Link href="tel:090-0000-0000" target="_blank">
+        <Link href="tel:090-0000-0000" target="_blank" className="opacity-70 hover:opacity-100 transition-opacity duration-300">
           <img
             src="/images/footer_phone_pc.png"
             alt="footer_phone_pc"
-            className="w-[450] hover:opacity-100 transition-opacity duration-300"
+            className="w-[450]"
           />
         </Link>
       </div>
